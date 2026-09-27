@@ -14,7 +14,7 @@ class CameraPublisher : public rclcpp::Node //Creation de la class camerapublish
 public:
     CameraPublisher() : Node("camera_publisher")
     {
-        publisher_ = this->create_publisher<sensor_msgs::msg::Image>("/camera/image_raw", 10);
+        publisher_ = this->create_publisher<sensor_msgs::msg::Image>("/camera/image_raw", 1);
 
         // Pipeline GStreamer utilisant le processeur d'image PiSP de la Pi 5
         std::string pipeline =
