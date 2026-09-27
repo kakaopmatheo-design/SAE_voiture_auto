@@ -1,0 +1,16 @@
+# Dossiers générés par colcon (NE JAMAIS VERSIONNER)
+build/
+install/
+log/
+
+# Fichiers temporaires C++ / CMake / Python
+*.o
+*.so
+*.a
+__pycache__/
+*.pyc
+CMakeCache.txt
+CMakeFiles/
+
+# Configuration locale de l'éditeur
+.vscode/
